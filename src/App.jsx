@@ -1,30 +1,31 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div>
-          <h1>HOLA MUNDO</h1>
-          <p>
-            ESTOY APRENDIENDO REACT
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onMouseEnter={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-    </>
+    <main className="app">
+
+      <h1>Mi espacio de tecnología</h1>
+
+      <p className="presentacion">
+        Hola, soy Jose Caleb Chinchilla Alvarado,
+        estudiante de Ingeniería de Sistemas.
+      </p>
+
+      <h2>Mi interés por la programación</h2>
+
+      <p>
+        Me interesa aprender programación, desarrollo web
+        y nuevas tecnologías para mejorar mis conocimientos.
+      </p>
+
+      <h2>¿Qué estoy aprendiendo?</h2>
+
+      <p>
+        Actualmente estoy fortaleciendo mis conocimientos
+        en Java, HTML, CSS y React.
+      </p>
+
+    </main>
   )
 }
 
