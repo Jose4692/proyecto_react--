@@ -1,10 +1,12 @@
 import './App.css'
-
+import miFoto from './assets/foto.png'
 function App() {
   return (
     <main className="app">
 
       <h1>Mi espacio de tecnología</h1>
+
+      <img src={miFoto} alt="Foto" className="foto-perfil" />
 
       <p className="presentacion">
         Hola, soy Jose Caleb Chinchilla Alvarado,
