@@ -6,7 +6,7 @@ function App() {
 
       <h1>Mi espacio de tecnología</h1>
 
-      <img src={miFoto} alt="Foto" className="foto-perfil" />
+      <img src={miFoto} alt="Foto personal" className="foto-perfil" />
 
       <p className="presentacion">
         Hola, soy Jose Caleb Chinchilla Alvarado,
