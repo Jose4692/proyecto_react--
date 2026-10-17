@@ -109,3 +109,51 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+body {
+margin: 0;
+background-color: #f4f7f4;
+font-family: Arial, sans-serif;
+color: #26332b;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+.foto-perfil {
+width: 160px;
+height: 160px;
+object-fit: cover;
+border-radius: 50%;
+border: 4px solid #198754;
+}
+
+.foto {
+width: 100%;
+height: 280px;
+object-fit: contain;
+background-color: #e9eee9;
+display: block;
+}
+
+.card {
+border: none;
+overflow: hidden;
+transition: transform 0.2s ease;
+}
+
+.card:hover {
+transform: translateY(-5px);
+}
+
+nav a {
+text-decoration: none;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
+footer {
+margin-top: 30px;
+}

@@ -1,17 +1,23 @@
-export default function Perfil() {
-return ( <section id="inicio" className="container text-center py-5"> <h2>¡Bienvenidos a mi portafolio!</h2>
+import miFoto from "../assets/foto.png";
 
+export default function Perfil() {
+return ( <section id="inicio" className="container text-center py-5"> <img
+     src={miFoto}
+     alt="Foto personal de José Caleb"
+     className="foto-perfil mb-3"
+   />
+
+  <h2>¡Hola! Soy José Caleb Chinchilla Alvarado</h2>
 
   <p className="lead">
-    Soy José Caleb y me gusta la fotografía.
-    Disfruto capturar paisajes, animales y momentos
-    especiales de la naturaleza.
+    Soy estudiante de Ingeniería de Sistemas y me interesa
+    aprender programación, desarrollo web y nuevas tecnologías.
   </p>
 
   <p>
-    En esta página comparto algunas de las fotografías
-    que he tomado y las experiencias que he vivido
-    detrás de cada imagen.
+    También disfruto la fotografía y me gusta capturar
+    paisajes, animales y momentos especiales de la naturaleza.
+    En este espacio comparto algunas de mis fotografías favoritas.
   </p>
 </section>
 

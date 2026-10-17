@@ -34,7 +34,7 @@ return (
         />
 
         <Tarjeta
-          imagen="/fotos/paisaje2.jpg"
+          imagen="/fotos/paisaje2.jpeg"
           titulo="Momentos especiales"
           descripcion="Recuerdos de mis experiencias explorando y fotografiando la naturaleza."
         />
