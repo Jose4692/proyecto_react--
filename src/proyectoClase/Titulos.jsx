@@ -40,7 +40,7 @@ function Titulos() {
         "Principios de experiencia de usuario, prototipado y accesibilidad."
     }
   ];
-
+//
   return (
     <section
       id="titulos"
