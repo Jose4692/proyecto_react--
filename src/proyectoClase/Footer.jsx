@@ -127,7 +127,7 @@ function Footer() {
             </div>
           </div>
         </div>
-      </div>
+      </div>//
 
       <hr className="border-secondary my-4" />
 
@@ -140,6 +140,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+}    
 
 export default Footer;
