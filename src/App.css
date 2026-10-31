@@ -1,4 +1,4 @@
-.:root {
+:root {
   color-scheme: light;
 }
 
@@ -45,3 +45,1460 @@ h2 {
   margin: 25px 0;
   border-radius: 15px;
 }
+
+/* MENU DE NAVEGACION */
+
+.navbar-personalizada {
+  background-color: #101d35;
+  padding: 15px 0;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-personalizada .navbar-brand {
+  font-size: 27px;
+  letter-spacing: 1px;
+}
+
+.navbar-personalizada .nav-link {
+  color: #e2e8f0;
+  font-size: 14px;
+  margin: 0 4px;
+  transition: 0.3s;
+}
+
+.navbar-personalizada .nav-link:hover {
+  color: #38bdf8;
+}
+
+.navbar-personalizada .navbar-toggler {
+  border-color: #38bdf8;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+/* PRESENTACION PRINCIPAL */
+
+.inicio {
+  background: linear-gradient(135deg, #f0f6ff, #ffffff);
+  padding: 30px 0;
+  color: #172554;
+}
+
+.etiqueta {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #dbeafe;
+  color: #2563eb;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.titulo-inicio {
+  font-size: clamp(35px, 5vw, 58px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.titulo-inicio span {
+  color: #2563eb;
+}
+
+.subtitulo-inicio {
+  font-size: 22px;
+  color: #475569;
+  margin-top: 20px;
+}
+
+.descripcion-inicio {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #64748b;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.contenedor-foto {
+  display: inline-block;
+  padding: 12px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #38bdf8);
+  box-shadow: 0 15px 40px rgba(37, 99, 235, 0.25);
+}
+
+.foto-inicio {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.redes-inicio {
+  display: flex;
+  gap: 20px;
+}
+
+.redes-inicio a {
+  font-size: 25px;
+  color: #2563eb;
+  transition: 0.3s;
+}
+
+.redes-inicio a:hover {
+  color: #0f172a;
+  transform: translateY(-5px);
+}
+
+@media (max-width: 576px) {
+  .foto-inicio {
+    width: 230px;
+    height: 230px;
+  }
+
+  .titulo-inicio {
+    font-size: 35px;
+  }
+}
+
+/* TÍTULO DE INICIO EN MODO CLARO */
+body:not(.modo-oscuro) .titulo-inicio {
+  color: #172554 !important;
+}
+
+body:not(.modo-oscuro) .titulo-inicio span {
+  color: #2563eb !important;
+}
+
+/* SECCION SOBRE MI */
+
+.sobre-mi {
+  background-color: #ffffff;
+  color: #1e293b;
+}
+
+.titulo-seccion {
+  font-size: 38px;
+  font-weight: 800;
+  color: #172554;
+  text-align: center;
+}
+
+.titulo-seccion > span {
+  display: block;
+  color: #2563eb;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.titulo-seccion > h2 {
+  color: #172554;
+  font-size: 38px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.titulo-seccion > p {
+  color: #64748b;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.titulo-seccion span {
+  color: #2563eb;
+}
+
+.texto-seccion {
+  color: #64748b;
+  font-size: 16px;
+}
+
+.sobre-mi h3 {
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+.sobre-mi p {
+  color: #64748b;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.sobre-mi h4 {
+  color: #2563eb;
+  font-weight: 700;
+}
+
+/* TARJETA DE INFORMACION */
+
+.tarjeta-perfil {
+  background: #f1f5f9;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.dato-perfil {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.dato-perfil:last-child {
+  margin-bottom: 0;
+}
+
+.dato-perfil i {
+  font-size: 27px;
+  color: #2563eb;
+}
+
+.dato-perfil h6 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.dato-perfil p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* TARJETAS DE CUALIDADES */
+
+.tarjeta-cualidad {
+  background: #f8fafc;
+  padding: 30px;
+  border-radius: 18px;
+  height: 100%;
+  text-align: center;
+  transition: 0.3s;
+  border: 1px solid #e2e8f0;
+}
+
+.tarjeta-cualidad:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(37, 99, 235, 0.12);
+}
+
+.tarjeta-cualidad i {
+  font-size: 38px;
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+.tarjeta-cualidad h5 {
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+.tarjeta-cualidad p {
+  font-size: 14px;
+}
+
+/* FORMACION ACADEMICA */
+
+.estudios {
+  background: #f0f6ff;
+  color: #1e293b;
+}
+
+.timeline {
+  position: relative;
+  max-width: 850px;
+  margin: auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  bottom: 20px;
+  width: 3px;
+  background: #2563eb;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 85px;
+  margin-bottom: 40px;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 62px;
+  height: 62px;
+  background: #2563eb;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  z-index: 2;
+  border: 5px solid #dbeafe;
+}
+
+.timeline-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+  border: 1px solid #e2e8f0;
+}
+
+.timeline-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.12);
+}
+
+.periodo-estudio {
+  display: inline-block;
+  background: #dbeafe;
+  color: #2563eb;
+  padding: 7px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.timeline-card h3 {
+  color: #1e3a8a;
+  font-weight: 800;
+  font-size: 23px;
+}
+
+.timeline-card h5 {
+  color: #2563eb;
+  font-size: 16px;
+  margin: 12px 0;
+}
+
+.timeline-card p {
+  color: #64748b;
+  line-height: 1.8;
+}
+
+.etiquetas-estudio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.etiquetas-estudio span {
+  background: #eff6ff;
+  color: #1d4ed8;
+  padding: 7px 13px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+
+  .timeline-item {
+    padding-left: 70px;
+  }
+
+  .timeline-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 21px;
+  }
+
+  .timeline-card {
+    padding: 20px;
+  }
+
+  .timeline-card h3 {
+    font-size: 19px;
+  }
+
+}
+
+
+/* HABILIDADES TECNOLOGICAS */
+
+.habilidades {
+  background: #ffffff;
+  color: #1e293b;
+}
+
+.tarjeta-habilidad {
+  background: #f8fafc;
+  padding: 25px;
+  border-radius: 18px;
+  border: 1px solid #e2e8f0;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.tarjeta-habilidad:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.12);
+  border-color: #93c5fd;
+}
+
+.encabezado-habilidad {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icono-habilidad {
+  width: 55px;
+  height: 55px;
+  background: #dbeafe;
+  color: #2563eb;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.encabezado-habilidad h5 {
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #1e3a8a;
+}
+
+.encabezado-habilidad span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.nivel-habilidad {
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.porcentaje-habilidad {
+  font-size: 13px;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.tarjeta-habilidad .progress {
+  height: 9px;
+  border-radius: 20px;
+  background: #e2e8f0;
+  overflow: hidden;
+}
+
+.tarjeta-habilidad .progress-bar {
+  background: linear-gradient(90deg, #2563eb, #38bdf8);
+  border-radius: 20px;
+  transition: width 1.5s ease;
+}
+
+.mensaje-aprendizaje {
+  max-width: 650px;
+  margin: auto;
+  background: #eff6ff;
+  padding: 35px;
+  border-radius: 20px;
+}
+
+.mensaje-aprendizaje i {
+  font-size: 35px;
+  color: #2563eb;
+}
+
+.mensaje-aprendizaje h4 {
+  margin-top: 15px;
+  font-weight: 800;
+  color: #1e3a8a;
+}
+
+.mensaje-aprendizaje p {
+  color: #64748b;
+  line-height: 1.8;
+}
+
+/* PROYECTOS */
+
+.proyectos {
+  background: #f0f6ff;
+  color: #1e293b;
+}
+
+.tarjeta-proyecto {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  transition: 0.3s;
+}
+
+.tarjeta-proyecto:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(37, 99, 235, 0.15);
+}
+
+.imagen-proyecto {
+  min-height: 250px;
+  background: linear-gradient(135deg, #0f766e, #14b8a6, #99f6e4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.proyecto-placeholder {
+  color: white;
+  padding: 30px;
+}
+
+.proyecto-placeholder i {
+  font-size: 65px;
+}
+
+.proyecto-placeholder h3 {
+  font-weight: 900;
+  letter-spacing: 5px;
+  margin-top: 15px;
+}
+
+.contenido-proyecto {
+  padding: 35px;
+}
+
+.categoria-proyecto {
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.contenido-proyecto h3 {
+  margin-top: 15px;
+  color: #1e3a8a;
+  font-weight: 800;
+}
+
+.contenido-proyecto h5 {
+  color: #2563eb;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.contenido-proyecto p {
+  color: #64748b;
+  line-height: 1.8;
+}
+
+.tecnologias-proyecto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.tecnologias-proyecto span {
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* EXPERIENCIA LABORAL */
+
+.experiencia {
+  padding: 90px 0;
+  background-color: #f1f5f9;
+}
+
+.tarjeta-experiencia {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  height: 100%;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+.tarjeta-experiencia:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.icono-experiencia {
+  min-width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dbeafe;
+  color: #2563eb;
+  border-radius: 12px;
+  font-size: 25px;
+}
+
+.tarjeta-experiencia h3 {
+  color: #172554;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.tiempo-experiencia {
+  display: inline-block;
+  color: #0284c7;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.tarjeta-experiencia p {
+  color: #64748b;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .tarjeta-experiencia {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .tarjeta-experiencia h3 {
+    font-size: 17px;
+  }
+}
+
+
+/* GALERÍA DE FOTOGRAFÍAS */
+
+.galeria {
+  padding: 90px 0;
+  background-color: #ffffff;
+}
+
+.tarjeta-galeria {
+  height: 100%;
+  background-color: #f8fafc;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+  transition: 0.3s;
+}
+
+.tarjeta-galeria:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.13);
+}
+
+.contenedor-foto {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9eee9;
+  padding: 8px;
+}
+
+.contenedor-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+.informacion-foto {
+  padding: 20px;
+}
+
+.informacion-foto span {
+  color: #0284c7;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.informacion-foto h3 {
+  color: #172554;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  .contenedor-foto {
+    height: 240px;
+  }
+}
+
+/* CONTACTO */
+
+.contacto {
+  padding: 90px 0;
+  background-color: #f1f5f9;
+}
+
+.informacion-contacto,
+.formulario-contacto {
+  height: 100%;
+  padding: 35px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.informacion-contacto h3,
+.formulario-contacto h3 {
+  color: #172554;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.dato-contacto {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.dato-contacto > i {
+  min-width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dbeafe;
+  color: #2563eb;
+  border-radius: 12px;
+  font-size: 21px;
+}
+
+.dato-contacto h4 {
+  color: #172554;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.dato-contacto p,
+.dato-contacto a {
+  color: #64748b;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.dato-contacto a:hover {
+  color: #0284c7;
+}
+
+.titulo-redes {
+  color: #172554;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 30px 0 15px;
+}
+
+.redes-contacto {
+  display: flex;
+  gap: 12px;
+}
+
+.redes-contacto a {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #172554;
+  color: white;
+  border-radius: 50%;
+  font-size: 19px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.redes-contacto a:hover {
+  background-color: #0284c7;
+  transform: translateY(-5px);
+}
+
+.formulario-contacto .form-control {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+}
+
+.formulario-contacto .form-control:focus {
+  border-color: #0284c7;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.12);
+}
+
+.btn-contacto {
+  padding: 12px 25px;
+  background-color: #172554;
+  color: white;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.btn-contacto:hover {
+  background-color: #0284c7;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .informacion-contacto,
+  .formulario-contacto {
+    padding: 25px 20px;
+  }
+}
+
+
+/* MEJORAS DEL FORMULARIO */
+
+.texto-contacto {
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.contador-mensaje {
+  text-align: right;
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 6px;
+}
+
+.botones-formulario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn-limpiar {
+  padding: 12px 22px;
+  background-color: #e2e8f0;
+  color: #334155;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.btn-limpiar:hover {
+  background-color: #cbd5e1;
+  color: #172554;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #16a34a;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background-color: #15803d;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.formulario-contacto textarea {
+  resize: vertical;
+}
+
+/* =========================================
+   MODO OSCURO COMPLETO
+========================================= */
+
+body.modo-oscuro {
+  background-color: #0f172a !important;
+  color: #e2e8f0 !important;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* FONDOS DE TODAS LAS SECCIONES */
+
+body.modo-oscuro #inicio,
+body.modo-oscuro #sobre-mi,
+body.modo-oscuro #estudios,
+body.modo-oscuro #habilidades,
+body.modo-oscuro #proyectos,
+body.modo-oscuro #experiencia,
+body.modo-oscuro #galeria,
+body.modo-oscuro #contacto {
+  background-color: #0f172a !important;
+  color: #e2e8f0 !important;
+}
+
+/* TEXTOS GENERALES */
+
+body.modo-oscuro h1,
+body.modo-oscuro h2,
+body.modo-oscuro h3,
+body.modo-oscuro h4,
+body.modo-oscuro h5,
+body.modo-oscuro p,
+body.modo-oscuro li,
+body.modo-oscuro label {
+  color: #e2e8f0 !important;
+}
+
+/* TEXTOS SECUNDARIOS */
+
+body.modo-oscuro .texto-contacto,
+body.modo-oscuro .titulo-seccion p,
+body.modo-oscuro .tarjeta-experiencia p,
+body.modo-oscuro .dato-contacto p {
+  color: #cbd5e1 !important;
+}
+
+/* TÍTULOS Y ELEMENTOS DESTACADOS */
+
+body.modo-oscuro .titulo-seccion span,
+body.modo-oscuro .tiempo-experiencia,
+body.modo-oscuro .informacion-foto span {
+  color: #38bdf8 !important;
+}
+
+/* TARJETAS */
+
+body.modo-oscuro .tarjeta-experiencia,
+body.modo-oscuro .tarjeta-galeria,
+body.modo-oscuro .informacion-contacto,
+body.modo-oscuro .formulario-contacto,
+body.modo-oscuro .tarjeta-proyecto,
+body.modo-oscuro .tarjeta-estudio,
+body.modo-oscuro .tarjeta-habilidad {
+  background-color: #1e293b !important;
+  color: #e2e8f0 !important;
+}
+
+/* INICIO Y PRESENTACIÓN */
+
+body.modo-oscuro #inicio h1,
+body.modo-oscuro #inicio h2,
+body.modo-oscuro #inicio p,
+body.modo-oscuro #inicio span {
+  color: #f8fafc !important;
+}
+
+/* ENLACES */
+
+body.modo-oscuro a:not(.btn):not(.navbar-brand):not(.nav-link) {
+  color: #7dd3fc;
+}
+
+/* FORMULARIOS */
+
+body.modo-oscuro .form-control {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+  border-color: #475569 !important;
+}
+
+body.modo-oscuro .form-control::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* GALERÍA */
+
+body.modo-oscuro .contenedor-foto {
+  background-color: #0f172a !important;
+}
+
+/* ICONOS */
+
+body.modo-oscuro .icono-experiencia {
+  background-color: #334155 !important;
+  color: #38bdf8 !important;
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+body.modo-oscuro .navbar-personalizada {
+  background-color: #080f1e !important;
+}
+
+/* BOTÓN LIMPIAR */
+
+body.modo-oscuro .btn-limpiar {
+  background-color: #334155 !important;
+  color: white !important;
+}
+
+
+/* =====================================
+   PALETA DE COLORES - MODO OSCURO
+===================================== */
+
+body.modo-oscuro {
+  background: #0b1220 !important;
+  color: #cbd5e1 !important;
+}
+
+/* FONDOS GENERALES */
+
+body.modo-oscuro section,
+body.modo-oscuro .seccion {
+  background-color: #0b1220 !important;
+  color: #cbd5e1 !important;
+}
+
+/* INICIO */
+
+body.modo-oscuro #inicio {
+  background: linear-gradient(135deg, #0b1220, #172338) !important;
+}
+
+body.modo-oscuro #inicio h1,
+body.modo-oscuro #inicio h2,
+body.modo-oscuro #inicio h3 {
+  color: #f8fafc !important;
+}
+
+body.modo-oscuro #inicio p {
+  color: #cbd5e1 !important;
+}
+
+body.modo-oscuro #inicio span {
+  color: #38bdf8 !important;
+}
+
+body.modo-oscuro #inicio strong {
+  color: #38bdf8 !important;
+}
+
+/* SOBRE MÍ */
+
+body.modo-oscuro #sobre-mi h2,
+body.modo-oscuro #sobre-mi h3 {
+  color: #f8fafc !important;
+}
+
+body.modo-oscuro #sobre-mi p {
+  color: #cbd5e1 !important;
+}
+
+/* ESTUDIOS */
+
+body.modo-oscuro #estudios h2,
+body.modo-oscuro #estudios h3,
+body.modo-oscuro #estudios h4 {
+  color: #f8fafc !important;
+}
+
+body.modo-oscuro #estudios p {
+  color: #cbd5e1 !important;
+}
+
+/* HABILIDADES */
+
+body.modo-oscuro #habilidades h2,
+body.modo-oscuro #habilidades h3,
+body.modo-oscuro #habilidades h4 {
+  color: #f8fafc !important;
+}
+
+/* PROYECTOS */
+
+body.modo-oscuro #proyectos h2,
+body.modo-oscuro #proyectos h3,
+body.modo-oscuro #proyectos h4 {
+  color: #f8fafc !important;
+}
+
+body.modo-oscuro #proyectos p {
+  color: #cbd5e1 !important;
+}
+
+/* EXPERIENCIA */
+
+body.modo-oscuro #experiencia h2,
+body.modo-oscuro #experiencia h3 {
+  color: #f8fafc !important;
+}
+
+body.modo-oscuro #experiencia p {
+  color: #cbd5e1 !important;
+}
+
+/* GALERÍA */
+
+body.modo-oscuro #galeria h2,
+body.modo-oscuro #galeria h3 {
+  color: #f8fafc !important;
+}
+
+/* CONTACTO */
+
+body.modo-oscuro #contacto h2,
+body.modo-oscuro #contacto h3,
+body.modo-oscuro #contacto h4 {
+  color: #f8fafc !important;
+}
+
+body.modo-oscuro #contacto p,
+body.modo-oscuro #contacto label {
+  color: #cbd5e1 !important;
+}
+
+/* TARJETAS */
+
+body.modo-oscuro .tarjeta-experiencia,
+body.modo-oscuro .tarjeta-galeria,
+body.modo-oscuro .informacion-contacto,
+body.modo-oscuro .formulario-contacto {
+  background-color: #172338 !important;
+  border: 1px solid #334155;
+}
+
+/* FORMULARIOS */
+
+body.modo-oscuro input,
+body.modo-oscuro textarea {
+  background-color: #0b1220 !important;
+  color: #f8fafc !important;
+  border-color: #475569 !important;
+}
+
+body.modo-oscuro input::placeholder,
+body.modo-oscuro textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* ENLACES */
+
+body.modo-oscuro a:not(.btn) {
+  color: #38bdf8;
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+body.modo-oscuro .navbar-personalizada {
+  background-color: #080f1e !important;
+}
+
+/* BOTONES */
+
+body.modo-oscuro .btn-contacto,
+body.modo-oscuro .btn-primary {
+  background-color: #0284c7 !important;
+  color: white !important;
+}
+
+body.modo-oscuro .btn-limpiar {
+  background-color: #334155 !important;
+  color: white !important;
+}
+
+
+
+/* ==========================================
+   SISTEMA DE COLORES: MODO CLARO Y OSCURO
+========================================== */
+
+/* MODO CLARO */
+
+body {
+  background-color: #ffffff;
+  color: #1e293b;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.titulo-seccion {
+  color: #172554;
+}
+
+.titulo-seccion span {
+  color: #2563eb;
+}
+
+/* MODO OSCURO GENERAL */
+
+body.modo-oscuro {
+  background-color: #0b1220 !important;
+  color: #cbd5e1 !important;
+}
+
+/* FONDOS DE SECCIONES */
+
+body.modo-oscuro .inicio,
+body.modo-oscuro .sobre-mi,
+body.modo-oscuro .estudios,
+body.modo-oscuro .habilidades,
+body.modo-oscuro .proyectos,
+body.modo-oscuro .experiencia,
+body.modo-oscuro .galeria,
+body.modo-oscuro .contacto {
+  background: #0b1220 !important;
+  color: #cbd5e1 !important;
+}
+
+/* TÍTULOS PRINCIPALES */
+
+body.modo-oscuro .titulo-seccion,
+body.modo-oscuro .titulo-inicio {
+  color: #f8fafc !important;
+}
+
+body.modo-oscuro .titulo-seccion span,
+body.modo-oscuro .titulo-inicio span {
+  color: #38bdf8 !important;
+}
+
+body.modo-oscuro .titulo-seccion > h2 {
+  color: #f8fafc !important;
+}
+
+body.modo-oscuro .titulo-seccion > p {
+  color: #cbd5e1 !important;
+}
+/* INICIO */
+
+body.modo-oscuro .inicio .etiqueta {
+  background-color: #1e3a5f !important;
+  color: #7dd3fc !important;
+}
+
+body.modo-oscuro .subtitulo-inicio,
+body.modo-oscuro .descripcion-inicio {
+  color: #cbd5e1 !important;
+}
+
+body.modo-oscuro .redes-inicio a {
+  color: #38bdf8 !important;
+}
+
+/* SOBRE MÍ */
+
+body.modo-oscuro .sobre-mi h3,
+body.modo-oscuro .sobre-mi h4 {
+  color: #7dd3fc !important;
+}
+
+body.modo-oscuro .sobre-mi p {
+  color: #cbd5e1 !important;
+}
+
+body.modo-oscuro .texto-seccion {
+  color: #cbd5e1 !important;
+}
+
+/* TARJETA DE INFORMACIÓN PERSONAL */
+
+body.modo-oscuro .tarjeta-perfil {
+  background-color: #172338 !important;
+  border: 1px solid #334155;
+}
+
+body.modo-oscuro .dato-perfil h6 {
+  color: #38bdf8 !important;
+}
+
+body.modo-oscuro .dato-perfil p {
+  color: #f1f5f9 !important;
+}
+
+body.modo-oscuro .dato-perfil i {
+  color: #38bdf8 !important;
+}
+
+/* TARJETAS DE CUALIDADES */
+
+body.modo-oscuro .tarjeta-cualidad {
+  background-color: #172338 !important;
+  border: 1px solid #334155 !important;
+}
+
+body.modo-oscuro .tarjeta-cualidad h5 {
+  color: #7dd3fc !important;
+}
+
+body.modo-oscuro .tarjeta-cualidad p {
+  color: #cbd5e1 !important;
+}
+
+body.modo-oscuro .tarjeta-cualidad i {
+  color: #38bdf8 !important;
+}
+
+/* ESTUDIOS */
+
+body.modo-oscuro .timeline-card {
+  background-color: #172338 !important;
+  border-color: #334155 !important;
+}
+
+body.modo-oscuro .timeline-card h3,
+body.modo-oscuro .timeline-card h5 {
+  color: #7dd3fc !important;
+}
+
+body.modo-oscuro .timeline-card p {
+  color: #cbd5e1 !important;
+}
+
+body.modo-oscuro .periodo-estudio,
+body.modo-oscuro .etiquetas-estudio span {
+  background-color: #263b57 !important;
+  color: #7dd3fc !important;
+}
+
+/* HABILIDADES */
+
+body.modo-oscuro .tarjeta-habilidad {
+  background-color: #172338 !important;
+  border-color: #334155 !important;
+}
+
+body.modo-oscuro .tarjeta-habilidad h5 {
+  color: #7dd3fc !important;
+}
+
+body.modo-oscuro .tarjeta-habilidad span,
+body.modo-oscuro .nivel-habilidad {
+  color: #cbd5e1 !important;
+}
+
+body.modo-oscuro .mensaje-aprendizaje {
+  background-color: #172338 !important;
+}
+
+body.modo-oscuro .mensaje-aprendizaje h4 {
+  color: #7dd3fc !important;
+}
+
+body.modo-oscuro .mensaje-aprendizaje p {
+  color: #cbd5e1 !important;
+}
+
+/* PROYECTOS */
+
+body.modo-oscuro .tarjeta-proyecto {
+  background-color: #172338 !important;
+}
+
+body.modo-oscuro .contenido-proyecto h3,
+body.modo-oscuro .contenido-proyecto h5 {
+  color: #7dd3fc !important;
+}
+
+body.modo-oscuro .contenido-proyecto p {
+  color: #cbd5e1 !important;
+}
+
+body.modo-oscuro .tecnologias-proyecto span {
+  background-color: #263b57 !important;
+  color: #7dd3fc !important;
+}
+
+/* EXPERIENCIA */
+
+body.modo-oscuro .tarjeta-experiencia {
+  background-color: #172338 !important;
+}
+
+body.modo-oscuro .tarjeta-experiencia h3 {
+  color: #7dd3fc !important;
+}
+
+body.modo-oscuro .tarjeta-experiencia p {
+  color: #cbd5e1 !important;
+}
+
+/* GALERÍA */
+
+body.modo-oscuro .tarjeta-galeria {
+  background-color: #172338 !important;
+}
+
+body.modo-oscuro .informacion-foto h3 {
+  color: #f8fafc !important;
+}
+
+body.modo-oscuro .contenedor-foto {
+  background-color: #0b1220 !important;
+}
+
+/* CONTACTO */
+
+body.modo-oscuro .informacion-contacto,
+body.modo-oscuro .formulario-contacto {
+  background-color: #172338 !important;
+}
+
+body.modo-oscuro .informacion-contacto h3,
+body.modo-oscuro .formulario-contacto h3,
+body.modo-oscuro .dato-contacto h4,
+body.modo-oscuro .titulo-redes {
+  color: #7dd3fc !important;
+}
+
+body.modo-oscuro .informacion-contacto p,
+body.modo-oscuro .formulario-contacto p,
+body.modo-oscuro .dato-contacto p,
+body.modo-oscuro .dato-contacto a {
+  color: #cbd5e1 !important;
+}
+
+/* FORMULARIOS */
+
+body.modo-oscuro .form-control {
+  background-color: #0b1220 !important;
+  color: #f8fafc !important;
+  border-color: #475569 !important;
+}
+
+body.modo-oscuro .form-control::placeholder {
+  color: #94a3b8 !important;
+}
+
+body.modo-oscuro .form-label,
+body.modo-oscuro .contador-mensaje {
+  color: #cbd5e1 !important;
+}
+
+/* MENÚ */
+
+body.modo-oscuro .navbar-personalizada {
+  background-color: #080f1e !important;
+}
+
+/* BOTONES */
+
+body.modo-oscuro .btn-limpiar {
+  background-color: #334155 !important;
+  color: #ffffff !important;
+}
+
+/* TRANSICIONES */
+
+body.modo-oscuro .tarjeta-perfil,
+body.modo-oscuro .tarjeta-cualidad,
+body.modo-oscuro .tarjeta-habilidad,
+body.modo-oscuro .timeline-card,
+body.modo-oscuro .tarjeta-experiencia,
+body.modo-oscuro .tarjeta-galeria,
+body.modo-oscuro .tarjeta-proyecto {
+  transition: background-color 0.3s, color 0.3s;
+}  

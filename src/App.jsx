@@ -1,18 +1,31 @@
+import Navbar from './components/Navbar';
+import Inicio from './components/Inicio';
+import SobreMi from './components/SobreMi';
+import Estudios from './components/Estudios';
+import Habilidades from './components/Habilidades';
+import Proyectos from './components/Proyectos';
+import Experiencia from './components/Experiencia';
+import Galeria from './components/Galeria';
+import Contacto from './components/Contacto';
 
-import React from "react";
-import NavbarPerfil from "./proyectoClase/NavbarPerfil";
-import Titulos from "./proyectoClase/Titulos";
-import Footer from "./proyectoClase/Footer";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import './App.css';
 
 function App() {
   return (
-    <div className="container-fluid p-0">
-      <NavbarPerfil />
-      <Titulos />
-      <Footer />
-    </div>
+    <>
+      <Navbar />
+      <Inicio />
+      <SobreMi />
+      <Estudios />
+      <Habilidades />
+      <Proyectos />
+      <Experiencia />
+      <Galeria />
+      <Contacto />
+    </>
   );
 }
 
