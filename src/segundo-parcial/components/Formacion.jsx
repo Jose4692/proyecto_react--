@@ -1,4 +1,4 @@
-function Estudios() {
+function Formacion() {
   return (
     <section id="estudios" className="estudios py-5">
 
@@ -101,4 +101,4 @@ function Estudios() {
   );
 }
 
-export default Estudios;
+export default Formacion;
