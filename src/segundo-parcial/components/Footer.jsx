@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function Contacto() {
+function Footer() {
   const [formulario, setFormulario] = useState({
     nombre: '',
     correo: '',
@@ -254,4 +254,4 @@ function Contacto() {
   );
 }
 
-export default Contacto;
+export default Footer;
